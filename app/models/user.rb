@@ -10,4 +10,6 @@ class User < ApplicationRecord
               uniqueness: true
   has_secure_password
   
+  # feature branch
+  
 end
