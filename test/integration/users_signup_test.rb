@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
-  
   def setup
     ActionMailer::Base.deliveries.clear
   end
@@ -45,6 +44,5 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_template 'users/show'
     assert is_logged_in?
-  end  
-  
+  end
 end
